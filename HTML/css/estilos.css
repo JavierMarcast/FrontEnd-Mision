@@ -41,7 +41,6 @@ body{/*Se le agrega la fuente de las letras*/
 .nav_banner::before{
     content: '';
     background: rgba(77, 77, 92, 0.2);
-    position: absolute;
     width: 100%;
     height: 60vh;
     left: 0 ;
@@ -298,7 +297,6 @@ tr:hover td{
         cursor: pointer;
     }
     .nav_menu{
-        
         position: fixed;
         top: 120px;
         bottom: 0;
@@ -315,7 +313,7 @@ tr:hover td{
     }
     .nav_input:checked + .nav_menu{ /*Cuando esta el check se activa la animacion del menu*/
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        position: absolute;
+
     }
     .nav_formulario{
         margin-bottom: 100px;
