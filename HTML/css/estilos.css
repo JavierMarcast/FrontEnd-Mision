@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/*banner*/
+
+body{/*Se le agrega la fuente de las letras*/
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+.fondo{
+    background-image: url(../media/banner.jpg); 
+    background-size: cover;
+    background-position: center;
+
+}
+.nav{/*En este apartado se modifica todo lo que tenga el nav general*/
+    background: #10181E;
+    height: 120px;
+    color: #C78851;
+}
+.nav_container{ /*En este apartado se modificara lo que se tenga en el contenedor (logo, nombre, menu)*/
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto ;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+.nav_banner{
+    padding: 0 50px;
+    background-image: url(../media/banner.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+.nav_banner::before{
+    content: '';
+    background: rgba(77, 77, 92, 0.2);
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    left: 0 ;
+}
+.titulo{
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: bold;
+    margin: 50px 0 50px 0;
+}
+.titulo2{
+    color: #fff;
+    width: 100%;
+    font-size: 1.8em;
+    text-align: center;
+    font-weight: bold;
+    margin: 50px 0 50px 0;
+}
+.contenido-banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    
+}
+.boton-inicar{
+    text-decoration: none;
+    color: #fff;
+    background:rgba(16, 24, 30, 0.7);
+    padding: 20px 40px ;
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.nav_label, .nav_input{/*Se ocultan los iconos que no necesitamos*/
+    display: none;
+}
+.nav_logo{/*Se modifican los valores del h1 que en este caso es el nombre de la tienda*/
+    font-size: 2em;
+    font-size: 9000;
+ 
+}
+.nav_menu{/*Se modifica los valores de menu*/
+    display: flex;
+    grid-auto-flow: column;
+    gap: 15px;
+    flex-shrink: 0;
+   
+}
+.nav_item{/*En este apartado se modifican los valores dentro del menu*/
+    color: #C78851;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.nav_item::after{/*En este apartado se modifican las nuevas vistas despues que pase el cursor*/
+    content: "";
+    display: block;
+    background: #F285AD;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .5s;
+}
+.nav_item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.card img{
+    width: 250px;
+    height: 250px;
+}
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
+.card{
+    margin: 30px;
+    text-align: center;
+}
+.nav_formulario{
+    width: 100%;
+    margin: 5% 0 10% 0;
+    
+}
+.formulario{
+    width: 600px;
+    height: auto;
+    background:#10181E;
+    color: #fff;
+    padding: 50px 30px;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 17px;
+    box-shadow: 7px 13px 37px #000;
+    
+
+}
+.informacionC{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 2px solid #F285AD ;
+    background: #ffffff;
+ 
+}
+.contenedorcheck{
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    display: flex;
+   
+}
+.subtitulo{
+    text-align: center;
+   
+}
+input{
+    width: 13px;
+    height:13px;
+    padding: 0;
+    margin:0;
+    vertical-align: bottom;
+    top: -1px;
+    *overflow: hidden;;
+}
+.btn-enviar{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+.iniciaPedido{
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 23px;
+}
+.boton-iniciarPedido{
+    color: #fff;
+    text-decoration: none;
+    background:rgba(199, 136, 81, 0.9);
+    align-self: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px 40px ;
+}
+.tablapedidos{
+    
+    width: 100%;
+    margin: 0 0 15% 0;
+    display: flex;
+    justify-content: center;
+}
+.tablapedidos2{
+    
+    width: 100%;
+    margin: 0 0 5% 0;
+    display: flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #fff;
+}
+table thead th{
+    font-size: 15px;
+    background: #f393b6;
+    color: #fff;
+}
+td,th {
+    border-bottom: 1px solid #10181E;
+    padding: 15px 10px;
+    font-size: 14px;
+}
+tr:nth-child(even){
+    background-color: #273844;
+}
+tr:nth-child(odd){
+    background-color: #0a1a2a;
+}
+tr:hover td{
+    color: #533821;
+    cursor: pointer;
+    background-color: #fff
+}
+.pie{
+    width: 100%;
+    background: #10181E;
+}
+.pie .nav_pie{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.pie .nav_pie .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pie .nav_pie .box figure img{
+    width: 250px;
+   
+}
+.pie .nav_pie .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie .nav_pie .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+
+}
+.pie .nav_pie .redsocial a img{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+ 
+}
+.pie .grupo2{
+    background: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie .grupo2 small{
+    font-size: 15px;
+
+
+}
+@media(max-width:700px){/*Cunado la pantalla se encuentre en un tamaño de 700px se ajustara de acuerdo a como lo establescamo*/
+    .nav_label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav_menu{
+        
+        position: fixed;
+        top: 120px;
+        bottom: 0;
+        background: #6e6a67;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 1s;
+    
+    }
+    .nav_input:checked + .nav_menu{ /*Cuando esta el check se activa la animacion del menu*/
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        position: absolute;
+    }
+    .nav_formulario{
+        margin-bottom: 100px;
+    }
+    .formulario{
+        width: auto;
+        height: auto;
+        background-color: #10181E;
+        
+    }
+    .contenedorcheck{
+        list-style: none;
+        display: block;
+ 
+    }
+    .tablapedidos{
+        width: 100%;
+        margin: 30% 0 30% 0;
+        display: flex;
+        justify-content: center;
+        font-size: 8px;
+    }
+    .tablapedidos2{
+        width: 100%;
+        margin: 30% 0 30% 0;
+        display: flex;
+        justify-content: center;
+        font-size: 8px;
+    }
+    .pie .nav_pie{
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        
+    }
+}
+
+
+
