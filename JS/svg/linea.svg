@@ -1,0 +1,5 @@
+<svg 
+    height="200" width="200" class="left-svg">
+    <polyline points="0,95 110,95 170,58 700,58"
+    style="fill: none; stroke: black; stroke-width: 3"/>
+</svg>

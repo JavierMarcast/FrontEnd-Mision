@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="media/logo.png" type="image/x-icon" >
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <section>
+        <div class="pokedex">
+            <div class="pokedexP1">
+                <div class="pokedexSupIzq">
+                    <div class="esfera1">
+                    </div>
+                    <div class="conjuntoEsferas">
+                        <div class="esferaP1"></div>
+                        <div class="esferaP2"></div>
+                        <div class="esferaP3"></div>
+                    </div>
+                </div>
+                <div class="pokedexMeIzq">
+                        <div class="conteImgPokemon">
+                            <div class="infomacion">
+                                <h3 id="name">Nombre </h3>
+                                <p id="numero">#</p>
+                                <p>Tipo</p>
+                            </div>
+                            <img src="media/logo.png" alt="" id="imgePoke" class="imgPoke">
+                        </div>
+                </div>
+                <div class="pokedexInfIzq">
+                    <div class="esferaEn1">
+                        <button  class="botonEnviar" onclick="fetchPokemon()"> Buscar </button>
+                    </div>
+                    <div class="botonesEn">
+                        <div class="botonesDeI">
+                            <div class="btn1"></div>
+                            <div class="btn2"></div>
+                        </div>
+                        <div class="panelBusqueda">
+                            <input type="text" class="texto" name="nombre" id="nombrePoke" placeholder="Busca a tu pokemon">
+                        </div>
+                    </div>
+                    <div class="BtnCruz">
+                    <div class="triangulo1"  onclick="resetCounter()"></div>
+                    <div class="triangulo2" onclick="incrementClick()"></div>
+                    </div>
+                </div>
+
+                </div>
+            <div class="pokedexP2">
+                <div class="ad1"></div>
+                <div class="ad1"></div>
+                
+            </div>
+            <div class="pokedexP3">
+                <div class="pantallaDerSup"></div>
+                <div class="pantallaDerEn">
+                    <div class="contenedorA"></div>
+                    <div class="contenedorA"></div>
+                    <div class="contenedorA"></div>
+                    <div class="contenedorA"></div>
+                    <div class="contenedorA"></div>
+                    <div class="contenedorA"></div>
+                    <div class="contenedorA"></div>
+                    <div class="contenedorA"></div>
+                    <div class="contenedorA"></div>
+                    <div class="contenedorA"></div>
+                </div>
+                <div class="pantallaDerEn2">
+                    <div class="botonesBlancos">
+                        <div class="btn3"></div>
+                        <div class="btn3"></div>
+                    </div>
+                    <div class="botonesSecundarios">
+                        <div class="botonesSec2">
+                            <div class="btn4"></div>
+                            <div class="btn4"></div>
+                        </div>
+                        <div class="divEsfera">
+                            <div class="esferaFinal"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="botonesSec3">
+                    <div class="btn5"></div>
+                    <div class="btn5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+<footer>
+    <script src="js.js"></script>
+</footer>
+</html>
